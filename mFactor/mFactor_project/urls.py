@@ -1,4 +1,4 @@
-"""ecommerce URL Configuration
+"""mFactor URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,7 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from os import listdir
+from os.path import join, isdir
+
+from mFactor_project.settings import BASE_DIR
+
+API_DIR = 'mFactor/api/'
+entities = [directory
+            for directory in listdir(join(BASE_DIR, API_DIR))
+            if (isdir(join(BASE_DIR, API_DIR, directory))
+                and directory != '__pycache__')]
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('mfactor.api.{}.urls'.format(entity)))
+    for entity in entites,
 ]

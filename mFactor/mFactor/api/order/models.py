@@ -1,7 +1,7 @@
 from django.db import models
 
-from ecommerce.api.user.models import User
-from ecommerce.api.unit.models import Unit
+from mFactor.api.user.models import User
+from mFactor.api.unit.models import Unit
 
 class Order(models.Model):
     unit_set = models.ManyToManyField(to=Unit, through='OrderUnit')

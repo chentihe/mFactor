@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ecommerce.api.property.models import Property
+from mFactor.api.property.models import Property
 
 class PropertySerializer(serializers.ModelSerializer):
 

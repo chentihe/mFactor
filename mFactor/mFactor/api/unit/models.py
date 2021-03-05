@@ -1,7 +1,7 @@
 from django.db import models
 
-from ecommerce.api.product.models import Product
-from ecommerce.api.property.models import PropertyValue
+from mFactor.api.product.models import Product
+from mFactor.api.property.models import PropertyValue
 
 class Unit(models.Model):
     product = models.ForeignKey(to=Product, on_delete=models.CASCADE)

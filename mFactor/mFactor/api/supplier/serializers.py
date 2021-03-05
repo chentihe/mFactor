@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ecommerce.api.supplier.models import Supplier
+from mFactor.api.supplier.models import Supplier
 
 class SupplierSerializer(serializers.ModelSerializer):
 

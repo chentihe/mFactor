@@ -1,6 +1,6 @@
 from django.urls import path
 
-from ecommerce.api.product.views import ProductListView, ProductDetailView
+from mFactor.api.product.views import ProductListView, ProductDetailView
 
 urlpatterns = [
     path('products/', ProductListView.as_view(), name='product-list'),

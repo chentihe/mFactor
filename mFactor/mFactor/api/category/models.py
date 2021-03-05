@@ -1,7 +1,7 @@
 from django.db import models
 
-from ecommerce.api.supplier.models import Supplier
-from ecommerce.api.product.models import Product
+from mFactor.api.supplier.models import Supplier
+from mFactor.api.product.models import Product
 
 class Category(models.Model):
     name = models.CharField(max_length=255)

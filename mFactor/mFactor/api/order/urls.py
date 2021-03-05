@@ -1,6 +1,6 @@
 from django.urls import path
 
-from ecommerce.api.order.views import OrderView, OrderDetailView
+from mFactor.api.order.views import OrderView, OrderDetailView
 
 urlpatterns = [
     path('orders/', OrderView.as_view(), name='order-list'),

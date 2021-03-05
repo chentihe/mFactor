@@ -29,4 +29,3 @@ class UserBody(models.Model):
     waist = models.DecimalField(max_digit=5, decimal_places=2)
     hip = models.DecimalField(max_digit=5, decimal_places=2)
     shoes = models.DecimalField(max_digit=5, decimal_places=2)
-

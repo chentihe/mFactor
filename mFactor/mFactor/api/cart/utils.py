@@ -1,7 +1,7 @@
 import base64
 import pickle
 from django_redis import get_redis_connection
-from ecommerce.api.cart import constants
+from mFactor.api.cart import constants
 
 '''
 selected:是否勾選此商品

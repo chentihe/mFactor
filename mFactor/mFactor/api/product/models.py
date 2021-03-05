@@ -1,8 +1,8 @@
 from django.db import models
 
-from ecommerce.api.tag import Tag
-from ecommerce.api.category import Category
-from ecommerce.api.supplier import Supplier
+from mFactor.api.tag import Tag
+from mFactor.api.category import Category
+from mFactor.api.supplier import Supplier
 
 class Product(models.Model):
     '''

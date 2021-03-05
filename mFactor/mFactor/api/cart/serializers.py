@@ -1,7 +1,7 @@
 from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import serializers
 
-from ecommerce.api.unit.models import Unit
+from mFactor.api.unit.models import Unit
 
 class CartSelectAllSerializer(serializers.Serializer):
     selected = serializers.BooleanField(label='all')

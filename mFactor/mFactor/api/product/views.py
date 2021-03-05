@@ -5,10 +5,10 @@ from rest_framework import generics
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
-from ecommerce.api.product.models import Product
-from ecommerce.api.product.serializers import ProductListSerializer, ProductSerializer
-from ecommerce.api.property.models import PropertyValue
-from ecommerce.api.unit.models import Unit
+from mFactor.api.product.models import Product
+from mFactor.api.product.serializers import ProductListSerializer, ProductSerializer
+from mFactor.api.property.models import PropertyValue
+from mFactor.api.unit.models import Unit
 
 class ProductSetPagination(PageNumberPagination):
     # 一頁顯示20個產品

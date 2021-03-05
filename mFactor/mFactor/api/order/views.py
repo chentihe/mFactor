@@ -7,12 +7,12 @@ from django.db.models import F
 from django.db import transaction
 import logging
 
-from ecommerce.api.order.models import Order
-from ecommerce.api.order.serializers import OrderListSerializer, OrderSerializer, OrderDetailSerializer
-from ecommerce.api.order_unit.models import OrderUnit
-from ecommerce.api.cart.utils import CartMixin
-from ecommerce.api.user.models import DeliveryInfo
-from ecommerce.api.user.service import DeliveryInfoService
+from mFactor.api.order.models import Order
+from mFactor.api.order.serializers import OrderListSerializer, OrderSerializer, OrderDetailSerializer
+from mFactor.api.order_unit.models import OrderUnit
+from mFactor.api.cart.utils import CartMixin
+from mFactor.api.user.models import DeliveryInfo
+from mFactor.api.user.service import DeliveryInfoService
 
 logger = logging.getLogger('django')
 

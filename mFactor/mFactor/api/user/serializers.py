@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 
-from ecommerce.api.user.models import UserProfile, DeliveryInfo, UserBody
+from mFactor.api.user.models import UserProfile, DeliveryInfo, UserBody
 
 class UserSerializer(serializers.ModelSerializer):
 
@@ -29,7 +29,7 @@ class UserBodySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserBody
-        fields = ('__all__')
+        fields = '__all__'
 
 class PasswordSerializer(serializers.ModelSerializer):
     password = serializers.CharField(min_length=6, max_length=127)

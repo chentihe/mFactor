@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
-from ecommerce.api.order_unit.models import OrderUnit
-from ecommerce.api.unit.serializers import UnitForOrderDetail
+from mFactor.api.order_unit.models import OrderUnit
+from mFactor.api.unit.serializers import UnitForOrderDetail
 
 class OrderUnitSerializer(serializers.ModelSerializer):
     unit = serializers.SerializerMethodField()

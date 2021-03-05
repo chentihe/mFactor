@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ecommerce.api.tag.models import Tag
+from mFactor.api.tag.models import Tag
 
 class TagSerializer(serializers.ModelSerializer):
 

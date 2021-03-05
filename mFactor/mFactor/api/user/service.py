@@ -1,4 +1,4 @@
-from ecommerce.api.user.models import DeliveryInfo
+from mFactor.api.user.models import DeliveryInfo
 
 class DeliveryInfoService:
 

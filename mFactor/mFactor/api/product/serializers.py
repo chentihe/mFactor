@@ -1,10 +1,10 @@
 from django.db.models import Max, Min
 from rest_framework import serializers
 
-from ecommerce.api.product.models import Product
-from ecommerce.api.tag.serializers import TagSerializer
-from ecommerce.api.supplier.serializers import SupplierSerializer
-from ecommerce.api.unit.serializers import UnitSerializer
+from mFactor.api.product.models import Product
+from mFactor.api.tag.serializers import TagSerializer
+from mFactor.api.supplier.serializers import SupplierSerializer
+from mFactor.api.unit.serializers import UnitSerializer
 
 class ProductListSerializer(serializers.ModelSerializer):
     '''產品清單列表'''

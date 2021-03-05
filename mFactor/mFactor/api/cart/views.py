@@ -3,9 +3,9 @@ from rest_framework import status, generics
 from rest_framework.response import Response
 import logging
 
-from ecommerce.api.cart.utils import CartMixin
-from ecommerce.api.unit.models import Unit
-from ecommerce.api.cart.serializers import CartSerializer, CartUnitSerializer, CartDeleteSerializer, CartSelectAllSerializer
+from mFactor.api.cart.utils import CartMixin
+from mFactor.api.unit.models import Unit
+from mFactor.api.cart.serializers import CartSerializer, CartUnitSerializer, CartDeleteSerializer, CartSelectAllSerializer
 
 logger = logging.getLogger('django')
 

@@ -1,10 +1,10 @@
 from rest_framework import serializers
 
 
-from ecommerce.api.order.models import Order, OrderUnit
-from ecommerce.api.unit.models import Unit
-from ecommerce.api.order_unit.serializers import OrderUnitSerializer
-from ecommerce.api.cart.utils import CartMixin
+from mFactor.api.order.models import Order, OrderUnit
+from mFactor.api.unit.models import Unit
+from mFactor.api.order_unit.serializers import OrderUnitSerializer
+from mFactor.api.cart.utils import CartMixin
 
 class OrderSerializer(serializers.ModelSerializer):
 

@@ -6,10 +6,10 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from ecommerce.api.user.models import UserProfile, DeliveryInfo, UserBody
-from ecommerce.api.user.serializers import UserSerializer, DeliveryInfoSerializer, UserBodySerializer, PasswordSerializer
-from ecommerce.api.user.service import DeliveryInfoService
-from ecommerce.api.user.permissions import IsUserOrReadOnly
+from mFactor.api.user.models import UserProfile, DeliveryInfo, UserBody
+from mFactor.api.user.serializers import UserSerializer, DeliveryInfoSerializer, UserBodySerializer, PasswordSerializer
+from mFactor.api.user.service import DeliveryInfoService
+from mFactor.api.user.permissions import IsUserOrReadOnly
 
 class UserCreateView(generics.CreateAPIView):
     permission_classes = (AllowAny,)
@@ -68,7 +68,7 @@ class UserBodyCreateView(generics.CreateAPIView):
     queryset = UserBody.objects.all()
     serializer_class = UserBodySerializer
 
-class UserBodyRUDView(generics.RetrieveUpdateDestroyAPIView):
+class UserBodyRUView(generics.RetrieveUpdateAPIView):
     permission_classes = (IsAuthenticated, IsUserOrReadOnly,)
     queryset = UserBody.objects.all()
     serializer_class = UserBodySerializer
