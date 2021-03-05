@@ -2,7 +2,7 @@
 
 This is for mFactor(B2C) Backend practice  
 
-Django Rest Framework to built api  
+Django Rest Framework to build api  
 
 Redis to store Cart info & cookies  
 
