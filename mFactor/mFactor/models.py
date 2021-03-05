@@ -1,4 +1,5 @@
 from django.db import models
+from mFactor.api.category.models import Category
 from mFactor.api.order.models import Order
 from mFactor.api.order_unit.models import OrderUnit
 from mFactor.api.product.models import Product
